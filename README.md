@@ -21,7 +21,7 @@ Today's project focuses on the **Fetch API** and **Asynchronous JavaScript**. Th
 - **Dynamic DOM Injection:** Creating and rendering HTML components on the fly based on data received.
 
 ## 🔗 Live Demo
-[Insert your GitHub Pages link here]
+[https://github.com/N-thnI/Fetch-API]
 
 ---
 *Next Up: Day 4 - Real-time Weather Integration*
