@@ -1,0 +1,88 @@
+:root {
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #38bdf8; 
+    --text: #f8fafc;
+    --text-dim: #94a3b8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.app-container { width: 100%; max-width: 500px; padding: 20px; text-align: center; }
+
+h1 span { color: var(--accent); }
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: var(--card-bg);
+    color: white;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: var(--bg);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* User Card Styling - Injected by JS */
+.user-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    animation: fadeIn 0.5s ease;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+.stat-item span { display: block; font-size: 0.8rem; color: var(--text-dim); }
+
+.visit-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
